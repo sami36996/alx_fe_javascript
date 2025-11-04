@@ -68,7 +68,10 @@ function importFromJsonFile(event) {
     alert("Quotes imported successfully!");
   };
   fileReader.readAsText(event.target.files[0]);
+
 }
+
+document.getElementById("importFile").addEventListener("change", importFromJsonFile);
 
 // Category Functions
 function populateCategories() {
